@@ -1,0 +1,50 @@
+<head>
+    <!-- Thêm Font Awesome từ CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">      
+  </head>
+
+<div>
+    <h4 class="text-center text-white bg-dark p-3">Fashion Management</h4>
+    <button class="btn-dark" (click)="addFashion()">Create New</button>
+</div>
+
+<table class="table table-hover mt-3">
+    <thead>
+        <tr class="text-center bg-dark text-white">
+            <th>Id</th>
+            <th>Style</th>
+            <th>Title</th>
+            <th>Detail</th>
+            <th>Thumbnail</th>
+            <th>Create Date</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let fashion of fashions">
+            <td>{{fashion._id}}</td>
+            <td>{{fashion.style}}</td>
+            <td>{{fashion.fashion_subject}}</td>
+            <td>{{fashion.fashion_detail}}</td>
+            <td>
+                <img src="{{fashion.fashion_image}}" style="object-fit: cover; width:140px; height:140px">
+            </td>
+            <td class="col-1 text-center">
+                {{ fashion.creationDate | date:'yyyy-MM-dd HH:mm:ss' }}
+            </td>
+            <td>
+            <div class="action-buttons">
+                <button class="btn btn-info btn-sm" (click)="viewDetailFashion(fashion)">
+                <i class="fa fa-eye"></i> <!-- Icon cho Detail -->
+                </button>
+                <button class="btn btn-warning btn-sm" (click)="editFashion(fashion)">
+                <i class="fa fa-edit"></i> <!-- Icon cho Edit (đã thay đổi) -->
+                </button>
+                <button class="btn btn-danger btn-sm" (click)="deleteFashion(fashion._id)">
+                <i class="fa fa-trash"></i> <!-- Icon cho Delete -->
+                </button>
+            </div>
+            </td>       
+        </tr>
+    </tbody>
+</table>

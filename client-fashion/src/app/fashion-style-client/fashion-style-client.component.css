@@ -1,0 +1,119 @@
+/* Container tổng thể */
+.container {
+    padding: 20px;
+    padding-top: 5px;
+    background-color: #f9f6f2;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  /* Cấu hình cho card */
+  .card {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  h4 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px; /* Tăng độ cách chữ */
+  }
+
+  /* Style cho ảnh trong card */
+  .card-img-top {
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  /* Icon trong card */
+  .card-img-top .icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+    z-index: 10;
+  }
+  
+  /* Cấu hình cho row sử dụng CSS Grid */
+  .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 fashion trên mỗi dòng */
+    gap: 20px; /* Khoảng cách giữa các card */
+    margin-top: 20px;
+  }
+  
+  /* Tiêu đề */
+  h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Định dạng cho select và button */
+  .select-container {
+    margin-top: 10px;
+  }
+  
+  .form-select {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+  }
+  
+  .btn-dark {
+    background-color: #343a40;
+    color: white;
+    font-size: 1rem;
+    padding: 12px 25px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .btn-dark:hover {
+    background-color: #5e4c3e;
+  }
+  
+  /* Responsive cho các màn hình nhỏ */
+  @media screen and (max-width: 1024px) {
+    .row {
+      grid-template-columns: repeat(2, 1fr); /* 2 fashion trên mỗi dòng */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .row {
+      grid-template-columns: repeat(1, 1fr); /* 1 fashion trên mỗi dòng */
+    }
+  }
+  

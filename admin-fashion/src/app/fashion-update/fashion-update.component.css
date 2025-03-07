@@ -1,0 +1,112 @@
+/* Container tổng thể */
+.container {
+    background-color: #f9f6f2;  /* Màu nền sáng cho container */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Tiêu đề của Fashion Id */
+  h4 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #343a40;  /* Nền tối cho tiêu đề */
+    color: #fff;  /* Màu chữ trắng */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px; /* Tăng độ cách chữ */
+  }
+  
+  /* Các nút Update và Back */
+  .btn-dark {
+    background-color: #343a40;
+    color: #fff;
+    font-size: 1rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    margin-bottom: 10px; /* Khoảng cách giữa các nút */
+  }
+  
+  .btn-dark:hover {
+    background-color: #5e4c3e;
+  }
+  
+  /* Căn chỉnh các nút */
+  .d-flex {
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  /* Các label cho trường nhập liệu */
+  label {
+    font-weight: bold;
+    color: #343a40;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  /* Các input, textarea */
+  input, textarea, .file-input, .ck-editor__editable_inline {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+  
+  /* Thêm hiệu ứng cho input và textarea khi focus */
+  input:focus, textarea:focus, .file-input:focus, .ck-editor__editable_inline:focus {
+    outline: none;
+    border-color: #5E4C3E;
+    box-shadow: 0 0 5px rgba(94, 76, 62, 0.5);
+  }
+  
+  /* Hiển thị ảnh Fashion */
+  img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Hiển thị ngày tạo Fashion */
+  div {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #343a40;
+  }
+  
+  /* Kiểu dáng cho file input */
+  .file-input {
+    padding: 8px;
+    font-size: 1rem;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: block;
+  }
+  
+  /* Căn chỉnh các label và input */
+  input[readonly], textarea[readonly] {
+    background-color: #f1f1f1;
+    cursor: not-allowed;
+  }
+

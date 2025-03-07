@@ -1,0 +1,118 @@
+/* Tiêu đề Fashion Subject */
+h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    background-color: #5e4c3e; /* Nền tối nâu đẹp */
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hiệu ứng hover cho tiêu đề */
+  h3:hover {
+    background-color: #C5B6A7; /* Màu nền sáng hơn khi hover */
+  }
+  
+  /* Định dạng chi tiết Fashion */
+  div[innerHTML] {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    color: #333;
+    border-left: 5px solid #5e4c3e; /* Thêm đường viền trái */
+  }
+  
+  /* Cải thiện hình ảnh */
+  .d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 10px;
+  }
+  
+  .ml-60 {
+    margin-left: 60px;
+  }
+  
+  img {
+    object-fit: cover;
+    max-height: 500px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Bóng đổ cho ảnh */
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hiệu ứng hover cho hình ảnh */
+  img:hover {
+    transform: scale(1.05); /* Phóng to hình ảnh khi hover */
+  }
+  
+  /* Cải thiện không gian giữa các phần tử */
+  .container {
+    padding: 30px;
+    padding-top: 10px;
+    background-color: #f9f6f2;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  /* Tiêu đề chính của khu vực */
+  h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    background-color: #f5a623;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+  }
+  
+  /* Card trong grid */
+  .card {
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Cấu hình cho layout hình ảnh */
+  .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .row {
+      grid-template-columns: repeat(2, 1fr); /* 2 cột khi màn hình nhỏ */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .row {
+      grid-template-columns: repeat(1, 1fr); /* 1 cột khi màn hình rất nhỏ */
+    }
+  }
+  

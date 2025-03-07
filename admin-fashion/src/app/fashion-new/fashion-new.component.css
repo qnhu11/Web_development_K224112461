@@ -1,0 +1,94 @@
+/* Container của form */
+.container {
+    background-color: #f9f6f2; /* Nền sáng */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  /* Tiêu đề */
+  h4 {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Các label */
+  label {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  /* Các input và textarea */
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hiệu ứng khi hover vào các input */
+  input[type="text"]:focus,
+  textarea:focus {
+    border-color: #5e4c3e;
+    box-shadow: 0 0 5px rgba(94, 76, 62, 0.4);
+  }
+  
+  /* Nút bấm */
+  button {
+    background-color: #343a40;
+    color: white;
+    font-size: 1rem;
+    padding: 12px 25px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #5e4c3e;
+    transform: scale(1.05);
+  }
+  
+  /* Các nút trong row */
+  button.me-2 {
+    margin-right: 10px;
+  }
+  
+  /* Phần nhập file */
+  .file-input {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  /* Cải thiện bố cục cho các cột */
+  .row {
+    margin-bottom: 20px;
+  }
+  
+  /* Sửa đổi để form có độ rộng phù hợp */
+  .col-lg-12 {
+    display: flex;
+    justify-content: flex-end;
+  }
+  

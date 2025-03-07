@@ -1,0 +1,100 @@
+/* Container tổng thể */
+.container {
+    background-color: #f9f6f2;  /* Màu nền sáng cho container */
+    padding: 80px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+  
+  h4 {
+    font-size: 1.8rem; /* Tăng kích thước chữ */
+    font-weight: bold;
+    text-align: center;
+    color:  #5e4c3e; 
+    background-color: #f9f6f2;  /* Màu nền sáng cho container */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nhẹ */
+  }
+  
+  /* Nút Create New */
+  .btn-dark {
+    background-color: #5e4c3e;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin-left: 5px;  /* Đẩy nút sang bên phải */
+    margin-right: auto; /* Cách lề phải 20px */
+    margin-bottom: 20px;
+  }
+  
+  .btn-dark:hover {
+    background-color: #5e4c3e;
+  }
+  
+  /* Các label cho trường nhập liệu */
+  label {
+    font-weight: bold;
+    color: #343a40;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Các input và textarea */
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+  
+  /* Thêm hiệu ứng cho input và textarea */
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: #5E4C3E;
+    box-shadow: 0 0 5px rgba(94, 76, 62, 0.5);
+  }
+  
+  /* Hiển thị ảnh Fashion */
+  img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Hiển thị ngày tạo Fashion */
+  div {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #343a40;
+  }
+  
+  /* Tạo hiệu ứng hover cho các button */
+  button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Căn chỉnh các label và input */
+  input[readonly], textarea[readonly] {
+    background-color: #f1f1f1;
+    cursor: not-allowed;
+  }
+  
